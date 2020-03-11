@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MARIUStheBrand</title>
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="shortcut icon" href="/image/favicon.png" type="image/x-icon">
 </head>
 <body>
-  <header>
+  <header class="header">
     <div>
-      <figure>
+      <figure class="logo">
         <img src="image/logo.png" alt="Logo de MARIUStheBrand">
       </figure>
-      <nav>
+      <nav class="menu">
         <ol>
           <li>
             <a href="./portafolio/index.html" >Portafolio</a>
@@ -27,42 +28,45 @@
       </nav>
     </div>
   </header>
-  <section>
+  <section class="hero">
     <h1>
       Hola! Soy <strong>MARIUStheBrand</strong> Desarrollador <br/> <strong>Javascript</strong> con <br/> pasión por <strong> enseñanza</strong>
     </h1>
    <img src="image/hero.jpg" width="500" height="300" alt="imagen principal del sitio">
-  </section >
-  <section id="portafolio">
+  </section>
+  <section id="portafolio" class="portfolio">
     <h2>Portafolio (Proyectos Destacados)</h2>
-    <article>
-      <h3>Platzi Video</h3>
-      <h6>React Native / React</h6>
-      <p><small><strong>Fecha:</strong> 01/07/2017</small></p>
-      <p><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam facere dolores corporis, itaque consequuntur cupiditate iure! Dolor, libero magni? Iure commodi eos in numquam similique ratione reprehenderit explicabo doloremque libero.</p>
-      <img src="image/platzi-video-react-native.png" width="500" alt="imagen del proyecto del curso de React Native">
+    <article class="project">
+      <h3 class="project__title">Platzi Video</h3>
+      <h6 class="project__course">React Native / React</h6>
+      <p class="project__date"><small><strong>Fecha:</strong> 01/07/2017</small></p>
+      <p class="project__url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
+      <p class="project__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam facere dolores corporis, itaque consequuntur cupiditate iure! Dolor, libero magni? Iure commodi eos in numquam similique ratione reprehenderit explicabo doloremque libero.</p>
+      <figure class="project__image-container">
+        <img class="project__image" src="image/platzi-video-react-native.png" width="500" alt="imagen del proyecto del curso de React Native">
+        
+      </figure>
       
     </article>
   </section>
   <section id="eventos">
     <h2>Más sobre mi experiencia</h2>
-    <article>
-      <figure>
-        <img src="image/platzi-conf.jpg" width="500" alt="">
+    <article class="event">
+      <figure class="event__image-container">
+        <img class="event__image" src="image/platzi-conf.jpg" width="500" alt="">
       </figure>
-      <h3>PlatziConf Colombia 2018</h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium cumque mollitia amet, veniam explicabo dignissimos!</p>
-      <a href="https://www.youtube.com/watch?v=L6H3r3bRIC0&feature=youtu.be" target="_blank" >Ver la charla</a>
+      <h3 class="event__title">PlatziConf Colombia 2018</h3>
+      <p class="event__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium cumque mollitia amet, veniam explicabo dignissimos!</p>
+      <a class="event__url" href="https://www.youtube.com/watch?v=L6H3r3bRIC0&feature=youtu.be" target="_blank" >Ver la charla</a>
     </article>
   </section>
-  <section id="contacto">
-    <form action="/suscripcion/">
+  <section id="contacto" class="contact">
+    <form action="/suscripcion/" class="form__email">
       <h3>¿Creamos algo Juntos ?</h3>
       <input type="text" placeholder="Tu email">
       <button>Enviar</button>
     </form>
   </section>
-  <footer>footer</footer>
+  <footer class="footer">footer</footer>
 </body>
 </html>
