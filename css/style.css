@@ -1,3 +1,9 @@
+/*  #035949 
+    #f2f2f2
+    #ffba00
+
+*/
+
 body {
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -11,8 +17,37 @@ h6 {
   font-weight: normal;
 }
 
-h1{
+h1 {
   font-size: 40px;
   line-height: 1.5em;
-  letter-spacing: -.2px;
+  letter-spacing: -0.2px;
+  color: #f2f2f2;
+}
+
+h1 strong {
+  color: #035949;
+}
+.hero {
+  height: 300px;
+  background-image: url(../image/hero.jpg);
+  background-color: #ffba00;
+  background-size: 500px 300px;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+.project__details {
+  width: 500px;
+}
+.project__image-container {
+  width: 500px;
+}
+
+.header {
+  background-color: #ffba00;
+  color: #f2f2f2;
+}
+
+.header a {
+  color: #f2f2f2;
+  text-decoration: none;
 }
